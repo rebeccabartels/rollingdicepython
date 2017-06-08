@@ -1,0 +1,8 @@
+roll_1 = random.randint(1,6)
+
+roll_1_pic = codesters.Sprite("dice" + str(roll_1), -100, 0)
+
+
+
+#my_display = codesters.Display(my_var, x, y)
+my_display = codesters.Display(roll_1, -200, 150)
