@@ -1,0 +1,15 @@
+roll_1 = random.randint(1,6)
+roll_1_pic = codesters.Sprite("dice" + str(roll_1), -100, 0)
+
+
+roll_1_score = codesters.Display(roll_1, -200, 150)
+
+roll_2 = random.randint(1,6)
+roll_2_pic = codesters.Sprite("dice" + str(roll_2), 100, 0)
+#my_display = codesters.Display(my_var, x, y)
+roll_2_score = codesters.Display(roll_2, 200, 150)
+
+
+total_roll = roll_1 + roll_2
+#my_display = codesters.Display(my_var, x, y)
+total_score = codesters.Display(total_roll, 0, -100)
