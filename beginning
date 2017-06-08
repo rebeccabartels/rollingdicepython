@@ -1,0 +1,17 @@
+stage.set_background_color("lightgreen")
+roll_1 = random.randint(1,6)
+roll_1_pic = codesters.Sprite("dice" + str(roll_1), -100, 50)
+roll_2 = random.randint(1,6)
+roll_2_pic = codesters.Sprite("dice" + str(roll_2), 100, 50)
+
+roll_total = roll_1 + roll_2
+
+roll_1_score = codesters.Display(roll_1)
+roll_1_score.set_x(-100)
+
+roll_2_score = codesters.Display(roll_2)
+roll_2_score.set_x(100)
+
+roll_total_score = codesters.Display(roll_total)
+roll_total_score.set_x(0)
+roll_total_score.set_y(-100)
